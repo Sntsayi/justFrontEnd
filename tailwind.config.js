@@ -11,6 +11,9 @@ module.exports = {
         teal: "#008080",
         bluewhte: "#0358a8",
         semiWhite: "#ecf0f1",
+        whiteBlue: " #C4FCEF",
+        whiteBluelg: "#00C9A7",
+        bluelg: "#008CCB",
       },
       backgroundImage: {
         "gradinatDark-gray":
@@ -22,6 +25,8 @@ module.exports = {
       spacing: {
         70: "17.5rem",
         "94%": "94%",
+        "150%": "150%",
+        "200%": "200%",
       },
     },
   },
