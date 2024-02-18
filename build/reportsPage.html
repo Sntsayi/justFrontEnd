@@ -12,22 +12,71 @@
     <!-- this script for use icon from Font Awesome website -->
     <title>Reports Page</title>
   </head>
-  <body class="transition-all duration-300 bg-semiWhite">
-    <div class="h-screen w-full flex relative">
+  <body class="transition-all duration-300 bg-semiWhite relative">
+    <div class="min-h-screen w-full flex relative">
       <!-- left and center -->
-
       <div class="md:w-4/5 w-full p-6">
         <!-- logo  -->
         <div>LogoWebPage</div>
-        <div class="text-center mt-36 font-bold text-3xl tracking-wider">
-          <p>صفحه گزارشات</p>
+        <div class="text-right p-9 mt-20 tracking-wider">
+          <!-- add report button -->
+          <div class="flex justify-end mb-7">
+            <button
+              class="addNewReportBtn border-2 p-3 rounded-lg border-black text-lg font-bold hover:bg-bluelg hover:text-semiWhite transition-all duration-300"
+            >
+              <i class="fas fa-plus mr-1"></i>
+              <span>افزودن گزارش جدید</span>
+            </button>
+          </div>
+          <!-- add report button -->
+          <div class="allReports space-y-5">
+            <!-- report -->
+            <!-- <div class="report">
+              <div
+                class="border-2 border-bluewhte rounded-xl p-7 bg-bluelg text-semiWhite relative"
+              >
+                <p class="textOfReport max-h-24 overflow-hidden">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی لورم
+                  ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                  تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                  آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم
+                  افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+                  طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این
+                  صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                  راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل
+                  حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای
+                  موجود طراحی اساسا مورد استفاده قرار گیرد.تکنولوژی مورد نیاز، و
+                  کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                  آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم
+                  افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+                  طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این
+                  صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                  راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل
+                  حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای
+                  موجود طراحی اساسا مورد استفاده قرار گیرد.تکنولوژی مورد نیاز، و
+                  کاربردهای متنوع با هدکاربردهای متنوع با هد
+                </p>
+                <button
+                  class="viewAndEditBtn bg-red-500 absolute top-1/2 right-85% p-3 rounded-lg text-black hover:bg-semiWhite transition-all duration-300 font-bold"
+                >
+                  مشاهده و تغییر
+                </button>
+              </div>
+            </div> -->
+            <!-- report -->
+          </div>
         </div>
       </div>
 
       <!-- left and center -->
 
       <!-- right sidebar -->
-      <!-- in mobile we see sidebarand button open or close side -->
+      <!-- in mobile state we see sidebarand button open or close side -->
       <div
         class="sidebar transition-all duration-300 absolute top-0 right-0 w-64 md:hidden bg-bluelg text-semiWhite h-screen rounded-l-lg text-center p-2 z-50 hiddenSidebar hidden"
       >
@@ -66,8 +115,9 @@
           </ul>
         </div>
       </div>
-      <!-- in monile we see sidebarand button open or close side -->
+      <!-- in mobile state we see sidebarand button open or close side -->
 
+      <!-- in web state -->
       <!-- menuButton -->
       <button
         class="menuButton md:hidden inline-block p-6 text-dark-gray absolute top-0 right-0 z-10"
@@ -106,8 +156,75 @@
           </div>
         </div>
       </div>
+      <!-- in web state -->
       <!-- right sidebar -->
     </div>
+
+    <!-- add add report page with absoulute -->
+    <div
+      class="addNewReportPage hidden w-full h-full z-50 absolute top-0 left-0 bg-semiWhite p-12 flex justify-center flex-col text-right gap-7"
+    >
+      <!-- close the writeReportPage -->
+      <button class="closeBtnInAddReport absolute top-0 right-0 m-5 mr-14">
+        <i
+          class="fa-regular fa-circle-xmark text-3xl hover:text-bluelg transition-all duration-300"
+        ></i>
+      </button>
+      <div class="text-2xl font-bold pr-3">:گزارش خود را بنویسید</div>
+      <form action="" class="border-2 border-bluewhte rounded-xl p-7 bg-bluelg">
+        <textarea
+          class="newReport text-black text-xl bg-semiWhite w-full outline-none rounded-lg p-5 text-right min-h-80"
+        >
+        </textarea>
+        <!-- this input for submit the report -->
+        <button
+          type="button"
+          class="submitNewReport border-2 border-black font-bold rounded-xl p-4 cursor-pointer mt-4 float-left ml-8 hover:bg-black hover:text-semiWhite transition-all duration-300"
+        >
+          ثبت گزارش
+        </button>
+      </form>
+    </div>
+    <!-- add add report page with absolute -->
+
+    <!-- View and Edit page -->
+    <div
+      class="viewAndEditPage hidden w-full h-full z-50 absolute top-0 left-0 bg-semiWhite p-12 flex justify-center flex-col text-right gap-7"
+    >
+      <!-- close the view and edit Page -->
+      <button class="closeBtnInAddReport absolute top-0 right-0 m-5 mr-14">
+        <i
+          class="fa-regular fa-circle-xmark text-3xl hover:text-bluelg transition-all duration-300"
+        ></i>
+      </button>
+      <div class="flex justify-between items-center">
+        <div class="pl-12">
+          <button
+            class="EditBtn bg-bluelg p-4 rounded-lg text-semiWhite font-bold hover:bg-black hover:border-semiWhite transition-all duration-300"
+          >
+            ویرایش دادن
+          </button>
+        </div>
+        <div class="text-2xl font-bold pr-3">: گزارش شما</div>
+      </div>
+
+      <form action="" class="border-2 border-bluewhte rounded-xl p-7 bg-bluelg">
+        <textarea
+          readonly
+          class="textOfViewAndEditPage text-black text-xl bg-semiWhite w-full outline-none rounded-lg p-5 text-right min-h-80"
+        >
+        </textarea>
+        <!-- this input for submit the edited report -->
+        <button
+          disabled
+          type="button"
+          class="submitTheEditedreport cursor-not-allowed border-2 border-black font-bold rounded-xl p-4 mt-4 float-left ml-8 hover:bg-black hover:text-semiWhite transition-all duration-300"
+        >
+          ثبت تغییرات
+        </button>
+      </form>
+    </div>
+    <!-- View and Edit page -->
     <script src="./reports.js"></script>
   </body>
 </html>
