@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,17 +10,88 @@
     ></script>
     <!-- this script for use icon from Font Awesome website -->
     <link rel="stylesheet" href="./style.css" />
-    <title>Superviser Panel</title>
+    <title>Ban User</title>
   </head>
   <body class="transition-all duration-700 bg-semiWhite">
-    <div class="h-screen w-full flex relative">
+    <div class="min-h-screen w-full flex relative">
       <!-- left and center -->
 
       <div class="md:w-4/5 w-full p-6">
         <!-- logo  -->
         <div>LogoWebPage</div>
-        <div class="text-center mt-36 font-bold text-3xl tracking-wider">
-          <p>........... خوش آمدید سوپروایزر</p>
+        <div class="mt-20 text-right p-10 font-bold text-2xl tracking-wider">
+          <!-- search box -->
+          <div class="relative mr-7">
+            <label for="searchBox">
+              <i
+                class="fa-solid fa-magnifying-glass absolute cursor-pointer top-1 right-1 bg-semiWhite p-2 rounded-full"
+              ></i>
+            </label>
+
+            <input
+              type="search"
+              id="searchBox"
+              placeholder=". کد ملی کاربر مورد نظر را وارد کنید"
+              class="transition-all duration-500 border-2 border-bluelg text-lg rounded-3xl text-semiWhite bg-semiWhite p-2 pl-4 pr-12 inline-block w-14 focus:w-96 ease-in focus:bg-bluelg placeholder:text-gray-700 placeholder:text-right placeholder:text-lg"
+            />
+          </div>
+
+          <!-- user of search box -->
+          <div
+            class="bg-bluelg p-7 mt-7 rounded-3xl flex items-center justify-center mr-7 ml-7"
+          >
+            <form action="" class="flex flex-col gap-0 w-80% mb-8 text-lg">
+              <div class="gap-2 flex flex-col">
+                <img
+                  src="../assets/imgs/pexels-ahmed-adly-1270184.jpg"
+                  alt="Not Found!"
+                  class="object-center w-36 h-36 rounded-full"
+                />
+                <label for="Fname">: نام</label>
+                <input
+                  type="text"
+                  id="Fname"
+                  value="صبوری"
+                  disabled
+                  class="text-right p-2 pr-4 rounded-lg bg-semiWhite"
+                />
+
+                <label for="lastName">: نام خانوادگی</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  value="صبوری"
+                  disabled
+                  class="text-right p-2 pr-4 rounded-lg bg-semiWhite"
+                />
+
+                <label for="birthday">: تاریخ تولد</label>
+                <input
+                  type="text"
+                  id="birthday"
+                  value="2000-07-22"
+                  class="p-2 pl-4 rounded-lg bg-semiWhite"
+                />
+
+                <label for="grade">: مقطع تحصیلی</label>
+                <input
+                  type="text"
+                  id="grade"
+                  class="p-2 pr-4 text-right rounded-lg bg-semiWhite"
+                  disabled
+                  value="لیسانس"
+                />
+              </div>
+              <span class="mt-8"
+                ><button
+                  class="bg-bestRed text-semiWhite text-bold hover:bg-semiWhite hover:text-black transition-all duration-300 p-3 rounded-lg float-left"
+                >
+                  حذف کاربر
+                </button>
+              </span>
+            </form>
+          </div>
+          <!-- user of search box -->
         </div>
       </div>
 
@@ -48,13 +119,28 @@
                 class="hover:text-black hover:bg-semiWhite hover:rounded-lg p-3 transition-all duration-500"
               >
                 <a
+                  href="./userManagementMaster.html "
+                  class="reportsButton cursor-pointer"
+                  >مدیریت کاربر</a
+                >
+              </div>
+            </li>
+
+            <li class="border-b-2"></li>
+            <li>
+              <div
+                class="hover:text-black hover:bg-semiWhite hover:rounded-lg p-3 transition-all duration-500"
+              >
+                <a
                   class="reportsButton cursor-pointer"
                   href="./seeReportSuperviser.html"
                   >دیدن گزارشات</a
                 >
               </div>
             </li>
+
             <li class="border-b-2"></li>
+
             <li>
               <!-- changes password page (implement with ajax) -->
               <div
@@ -93,12 +179,25 @@
                   class="hover:text-black hover:bg-semiWhite hover:rounded-lg p-3 transition-all duration-500"
                 >
                   <a
+                    href="./userManagementMaster.html"
+                    class="reportsButton cursor-pointer"
+                    >مدیریت کاربر</a
+                  >
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="hover:text-black hover:bg-semiWhite hover:rounded-lg p-3 transition-all duration-500"
+                >
+                  <a
                     class="reportsButton cursor-pointer"
                     href="./seeReportSuperviser.html"
                     >دیدن گزارشات</a
                   >
                 </div>
               </li>
+
               <li>
                 <!-- changes password page (implement with ajax) -->
                 <div
@@ -117,6 +216,6 @@
       </div>
       <!-- right sidebar -->
     </div>
-    <script src="./allJsFiles/engineerPanel.js"></script>
+    <script src="./allJsFiles/banUsersMaster.js"></script>
   </body>
 </html>
