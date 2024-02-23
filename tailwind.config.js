@@ -14,6 +14,8 @@ module.exports = {
         whiteBlue: " #C4FCEF",
         whiteBluelg: "#00C9A7",
         bluelg: "#008CCB",
+        bestRed: "#eb2f06",
+        bestGreen: "#78e08f",
       },
       backgroundImage: {
         "gradinatDark-gray":
@@ -29,6 +31,8 @@ module.exports = {
         "200%": "200%",
         "80%": "80%",
         "85%": "85%",
+        "88%": "88%",
+        "90%": "90%",
         "70%": "70%",
         "60%": "60%",
         "55%": "55%",

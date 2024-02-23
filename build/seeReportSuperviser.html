@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- this script for use icon from Font Awesome website -->
-    <title>Reports Page</title>
+    <title>seeAllReport</title>
   </head>
   <body class="transition-all duration-300 bg-semiWhite relative">
     <div class="min-h-screen w-full flex relative">
@@ -19,17 +19,6 @@
         <!-- logo  -->
         <div>LogoWebPage</div>
         <div class="text-right p-9 mt-20 tracking-wider">
-          <!-- add report button -->
-          <div class="flex justify-end mb-7">
-            <a
-              class="addNewReportBtn border-2 p-3 rounded-lg border-black text-lg font-bold hover:bg-bluelg hover:text-semiWhite transition-all duration-300"
-              href="./addReportEngineerPanel.html"
-            >
-              <i class="fas fa-plus mr-1"></i>
-              <span>افزودن گزارش جدید</span>
-            </a>
-          </div>
-          <!-- add report button -->
           <div class="allReports space-y-5">
             <!-- report -->
             <div class="report">
@@ -38,10 +27,10 @@
               >
                 <p class="max-h-24 overflow-hidden">سلام عزیزم</p>
                 <a
-                  href="./viewAndEditPageEngineer.html"
-                  class="bg-red-500 absolute top-1/2 right-85% p-3 rounded-lg text-black hover:bg-semiWhite transition-all duration-300 font-bold"
+                  href="./viewReportSuperviser.html"
+                  class="bg-red-500 absolute cursor-pointer top-1/2 right-88% p-3 rounded-lg text-black hover:bg-semiWhite transition-all duration-300 font-bold"
                 >
-                  مشاهده و تغییر
+                  مشاهده
                 </a>
               </div>
             </div>
@@ -84,7 +73,7 @@
               <div
                 class="hover:text-black hover:bg-semiWhite hover:rounded-lg p-3 transition-all duration-500"
               >
-                <a class="cursor-pointer" href="./reportsEngineerPanel.html"
+                <a class="cursor-pointer" href="./superviserPanel.html"
                   >صفحه اصلی</a
                 >
               </div>
@@ -124,7 +113,7 @@
                 <div
                   class="hover:text-black hover:bg-semiWhite hover:rounded-lg p-3 transition-all duration-500"
                 >
-                  <a class="cursor-pointer" href="./engineerPanel.html"
+                  <a class="cursor-pointer" href="./superviserPanel.html"
                     >صفحه اصلی</a
                   >
                 </div>
@@ -136,7 +125,6 @@
       <!-- in web state -->
       <!-- right sidebar -->
     </div>
-
     <script src="./allJsFiles/reportsPanel.js"></script>
   </body>
 </html>
