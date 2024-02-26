@@ -6,9 +6,6 @@ const textAnnounce = document.querySelector(".textAnnounce");
 const iconAnnounce = document.querySelector(".iconAnnounce");
 
 confirmReport.addEventListener("click", function () {
-  writeMasterReport.classList.remove("opacity-0");
-  writeMasterReport.classList.remove("cursor-default");
-
   textAnnounce.classList.remove("text-bestRed");
   textAnnounce.classList.add("text-bestGreen");
   textAnnounce.innerHTML = "تایید شده";
