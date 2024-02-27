@@ -984,10 +984,6 @@ video {
   border-width: 3px;
 }
 
-.border-4 {
-  border-width: 4px;
-}
-
 .border-b-2 {
   border-bottom-width: 2px;
 }
@@ -1104,6 +1100,11 @@ video {
   padding: 2.25rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .pb-11 {
   padding-bottom: 2.75rem;
 }
@@ -1198,6 +1199,10 @@ video {
 
 .font-extrabold {
   font-weight: 800;
+}
+
+.font-extralight {
+  font-weight: 200;
 }
 
 .tracking-wider {
