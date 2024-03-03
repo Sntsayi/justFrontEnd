@@ -6,6 +6,6 @@
 @layer components {
   /* hidden the sidebar */
   .hiddenSidebar {
-    @apply translate-x-150% overflow-x-hidden overflow-hidden;
+    @apply translate-x-150%;
   }
 }

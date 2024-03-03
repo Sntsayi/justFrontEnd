@@ -11,11 +11,9 @@ const imgOfInput = document.querySelector(".imgOfInput");
 //open and close the sidebar im mobile
 menuButton.addEventListener("click", () => {
   sidebar.classList.remove("hiddenSidebar");
-  sidebar.classList.remove("hidden");
 });
 closeSedeBar.addEventListener("click", () => {
   sidebar.classList.add("hiddenSidebar");
-  sidebar.classList.add("hidden");
 });
 
 // js for check the input of file just accept the jpg or png or jpej image file

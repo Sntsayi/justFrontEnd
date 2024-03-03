@@ -14,7 +14,7 @@
   <body class="transition-all duration-300 bg-semiWhite">
     <!-- close the view and edit Page -->
     <a
-      class="closeBtnInAddReport m-7 mr-14 float-right"
+      class="closeBtnInAddReport md:m-5 md:mr-12 m-3 float-right"
       href="./reportsEngineerPanel.html"
     >
       <i
@@ -23,7 +23,7 @@
     </a>
     <div class="min-h-screen w-full flex">
       <div
-        class="mt-5 w-full h-full z-50 bg-semiWhite p-12 flex justify-center flex-col text-right gap-7"
+        class="mt-5 w-full h-full z-50 bg-semiWhite md:p-12 p-2 pt-12 flex justify-center flex-col text-right gap-7"
       >
         <div class="flex justify-between items-center">
           <div class="pl-12">
@@ -38,11 +38,12 @@
 
         <form
           action=""
-          class="border-2 border-bluewhte rounded-xl p-7 bg-bluelg"
+          class="border-2 border-bluewhte rounded-xl md:p-7 p-4 bg-bluelg"
         >
           <textarea
             readonly
-            class="text-black text-xl bg-semiWhite w-full outline-none rounded-lg p-5 text-right min-h-80"
+            id="txt"
+            class="text-black md:text-xl text-base bg-semiWhite w-full outline-none rounded-lg p-5 text-right min-h-80"
           >
           </textarea>
           <!-- this input for submit the edited report -->

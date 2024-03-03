@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
   <body class="transition-all duration-300 bg-semiWhite">
     <!-- close the view and edit Page -->
     <a
-      class="closeBtnInAddReport m-7 mr-14 float-right"
+      class="closeBtnInAddReport md:m-5 md:mr-12 m-3 float-right"
       href="./seeReportSuperviser.html"
     >
       <i
@@ -24,13 +24,13 @@
     </a>
     <div class="min-h-screen w-full flex">
       <div
-        class="mt-5 w-full h-full z-50 bg-semiWhite p-12 flex justify-center flex-col text-right gap-7"
+        class="mt-5 w-full h-full z-50 bg-semiWhite md:p-12 p-2 pt-12 flex justify-center flex-col text-right gap-7"
       >
         <span class="text-2xl font-bold pr-3 mb-4">: گزارش نوشته شده</span>
 
         <form
           action=""
-          class="border-2 border-bluewhte rounded-xl p-7 bg-bluelg"
+          class="border-2 border-bluewhte rounded-xl md:p-7 p-4 bg-bluelg"
         >
           <textarea
             readonly
@@ -48,16 +48,16 @@
               <div>
                 <button
                   type="button"
-                  class="ConfirmReport border-2 hover:bg-black hover:text-semiWhite border-black font-bold rounded-xl p-4 mt-4 transition-all duration-300"
+                  class="ConfirmReport border-2 hover:bg-black hover:text-semiWhite border-black md:font-bold font-extrabold rounded-xl md:text-base text-sm md:p-4 p-2 mt-4 transition-all duration-300"
                 >
                   تایید گزارش
                 </button>
               </div>
 
-              <div class="p-4 mt-4">
+              <div class="p-4 md:mt-4 mt-2">
                 <a
                   href="./addMasterReport.html"
-                  class="writeMasterReport hover:bg-black hover:text-semiWhite opacity-0 cursor-default border-2 border-black font-bold rounded-xl p-4 mt-4 transition-all duration-700"
+                  class="writeMasterReport hover:bg-black hover:text-semiWhite opacity-0 cursor-default border-2 border-black font-bold md:text-lg text-sm md:rounded-xl rounded-lg md:p-4 p-2 md:mt-4 transition-all duration-700"
                 >
                   نوشتن گزارش کارفرما
                 </a>
@@ -65,13 +65,14 @@
             </div>
 
             <!-- right -->
-            <div class="flex space-x-3">
-              <span class="textAnnounce text-bestRed font-extrabold text-xl"
+            <div class="flex justify-between space-x-2">
+              <span
+                class="textAnnounce text-bestRed font-extrabold md:text-lg text-sm"
                 >تایید نشده</span
               >
               <div>
                 <i
-                  class="iconAnnounce text-3xl text-bestRed fa-regular fa-circle-xmark"
+                  class="iconAnnounce md:text-3xl text-2xl text-bestRed fa-regular fa-circle-xmark"
                 ></i>
                 <!-- <i
                   class="text-2xl text-bestGreen fa-regular fa-circle-check"
