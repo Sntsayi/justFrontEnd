@@ -16,6 +16,9 @@ module.exports = {
         bluelg: "#008CCB",
         bestRed: "#eb2f06",
         bestGreen: "#78e08f",
+        softPeach: "#FFDAB9",
+        cazyTaupe: "#483C32",
+        ToastedAlmond: "#EEDD82",
       },
       backgroundImage: {
         "gradinatDark-gray":

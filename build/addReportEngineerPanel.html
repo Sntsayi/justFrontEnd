@@ -9,38 +9,38 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- for textEditor -->
-    <!-- <script src="https://cdn.ckeditor.com/ckeditor5/41.1.0/super-build/ckeditor.js"></script> -->
-    <!-- for textEditor -->
-
     <title>addNewReport</title>
   </head>
-  <body class="transition-all duration-300 bg-semiWhite relative">
+  <body
+    class="transition-all duration-300 bg-ToastedAlmond relative font-AnjomanRegular"
+  >
     <!-- close the writeReportPage -->
-    <a
-      class="float-right md:m-5 md:mr-12 m-3"
-      href="./reportsEngineerPanel.html"
-    >
-      <i
-        class="fa-regular fa-circle-xmark text-3xl hover:text-bluelg transition-all duration-300"
-      ></i>
-    </a>
+    <div class="flex justify-between md:m-5 md:mr-12 m-3">
+      <span>LogoWebpage</span>
+      <a href="./reportsEngineerPanel.html">
+        <i
+          class="fa-regular fa-circle-xmark text-4xl hover:text-cazyTaupe transition-all duration-300"
+        ></i>
+      </a>
+    </div>
     <div
-      class="w-full h-full bg-semiWhite md:p-12 p-2 pt-12 flex justify-center flex-col text-right gap-7"
+      class="w-full h-full md:p-12 p-2 pt-12 flex justify-center flex-col text-right gap-7"
     >
-      <div class="text-2xl font-bold pr-3">:گزارش خود را بنویسید</div>
+      <div class="text-2xl font-bold pr-3 text-cazyTaupe">
+        :گزارش خود را بنویسید
+      </div>
       <form
         action=""
-        class="border-2 border-bluewhte rounded-xl md:p-7 p-4 bg-bluelg"
+        class="border-2 border-bluewhte rounded-xl md:p-7 p-4 bg-cazyTaupe"
       >
         <textarea
           id="editor"
-          class="text-black md:text-xl text-base bg-semiWhite w-full outline-none rounded-lg p-5 text-right min-h-80"
+          class="text-black md:text-xl text-base bg-softPeach w-full outline-none rounded-lg p-5 text-right min-h-80"
         ></textarea>
         <!-- this input for submit the report -->
         <button
           type="button"
-          class="border-2 border-black font-bold rounded-xl p-4 cursor-pointer mt-4 float-left ml-8 hover:bg-black hover:text-semiWhite transition-all duration-300"
+          class="border-2 border-softPeach font-extrabold text-xl rounded-xl p-4 cursor-pointer mt-4 float-left ml-8 text-softPeach hover:bg-softPeach hover:text-cazyTaupe transition-all duration-300"
         >
           ثبت گزارش
         </button>

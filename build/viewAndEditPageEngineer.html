@@ -11,24 +11,27 @@
     ></script>
     <title>View And Edit Report</title>
   </head>
-  <body class="transition-all duration-300 bg-semiWhite">
+  <body
+    class="transition-all duration-300 bg-ToastedAlmond font-AnjomanRegular"
+  >
     <!-- close the view and edit Page -->
-    <a
-      class="closeBtnInAddReport md:m-5 md:mr-12 m-3 float-right"
-      href="./reportsEngineerPanel.html"
-    >
-      <i
-        class="fa-regular fa-circle-xmark text-3xl hover:text-bluelg transition-all duration-300"
-      ></i>
-    </a>
+    <div class="flex justify-between md:m-5 md:mr-12 m-3">
+      <span>LogoWebpage</span>
+
+      <a class="closeBtnInAddReport" href="./reportsEngineerPanel.html">
+        <i
+          class="fa-regular fa-circle-xmark text-4xl hover:text-cazyTaupe transition-all duration-300"
+        ></i>
+      </a>
+    </div>
     <div class="min-h-screen w-full flex">
       <div
-        class="mt-5 w-full h-full z-50 bg-semiWhite md:p-12 p-2 pt-12 flex justify-center flex-col text-right gap-7"
+        class="mt-5 w-full h-full z-50 md:p-12 p-2 pt-12 flex justify-center flex-col text-right gap-7"
       >
         <div class="flex justify-between items-center">
           <div class="pl-12">
             <button
-              class="EditBtn bg-bluelg p-4 rounded-lg text-semiWhite font-bold hover:bg-black hover:border-semiWhite transition-all duration-300"
+              class="EditBtn bg-cazyTaupe text-lg font-bold p-4 rounded-md text-semiWhite hover:bg-bluewhte hover:border-semiWhite transition-all duration-300"
             >
               ویرایش دادن
             </button>
@@ -38,19 +41,18 @@
 
         <form
           action=""
-          class="border-2 border-bluewhte rounded-xl md:p-7 p-4 bg-bluelg"
+          class="border-2 border-bluewht rounded-xl md:p-7 p-4 bg-cazyTaupe"
         >
           <textarea
             readonly
             id="txt"
-            class="text-black md:text-xl text-base bg-semiWhite w-full outline-none rounded-lg p-5 text-right min-h-80"
+            class="text-black md:text-xl text-base bg-softPeach w-full outline-none rounded-lg p-5 text-right min-h-80"
           >
           </textarea>
           <!-- this input for submit the edited report -->
           <button
-            disabled
             type="button"
-            class="submitTheEditedreport cursor-not-allowed border-2 border-black font-bold rounded-xl p-4 mt-4 float-left ml-8 hover:bg-black hover:text-semiWhite transition-all duration-300"
+            class="submitTheEditedreport border-2 border-softPeach font-extrabold text-md rounded-xl p-4 cursor-pointer mt-4 float-left ml-8 text-softPeach hover:bg-softPeach hover:text-cazyTaupe transition-all duration-300"
           >
             ثبت تغییرات
           </button>

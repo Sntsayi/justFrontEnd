@@ -8,4 +8,53 @@
   .hiddenSidebar {
     @apply translate-x-150%;
   }
+  /* .card {
+    background-color: theme('colors.white');
+    border-radius: theme('borderRadius.lg');
+    padding: theme('spacing.6');
+    box-shadow: theme('boxShadow.xl');
+  } */
+}
+
+/* custom font */
+@font-face {
+  font-family: "Anjoman Regular";
+  src: url("https://db.onlinewebfonts.com/t/f6886c4078ba029be14b7d1053f961b5.eot");
+  src: url("https://db.onlinewebfonts.com/t/f6886c4078ba029be14b7d1053f961b5.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/f6886c4078ba029be14b7d1053f961b5.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/f6886c4078ba029be14b7d1053f961b5.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/f6886c4078ba029be14b7d1053f961b5.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/f6886c4078ba029be14b7d1053f961b5.svg#Anjoman Regular")
+      format("svg");
+}
+
+@font-face {
+  font-family: "Anjoman Bold";
+  src: url("https://db.onlinewebfonts.com/t/ca953251f8931b1efb675a30ee3349ac.eot");
+  src: url("https://db.onlinewebfonts.com/t/ca953251f8931b1efb675a30ee3349ac.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/ca953251f8931b1efb675a30ee3349ac.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/ca953251f8931b1efb675a30ee3349ac.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/ca953251f8931b1efb675a30ee3349ac.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/ca953251f8931b1efb675a30ee3349ac.svg#Anjoman Bold")
+      format("svg");
+}
+
+@layer utilities {
+  .clipPathPolygon {
+    clip-path: polygon(0 4%, 100% 0, 100% 95%, 0% 100%);
+  }
+  .font-AnjomanRegular {
+    font-family: "Anjoman Regular";
+  }
+  .font-AnjomanBold {
+    font-family: "Anjoman Bold";
+  }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" class="overflow-hidden">
+<html lang="fa" class="overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,17 +10,26 @@
       crossorigin="anonymous"
     ></script>
     <!-- this script for use icon from Font Awesome website -->
+    <!-- for cahrtjs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Engineer Panel</title>
   </head>
-  <body class="transition-all duration-700 bg-semiWhite overflow-hidden">
-    <div class="h-screen w-full flex relative">
+  <body
+    class="transition-all duration-700 bg-ToastedAlmond overflow-x-hidden font-AnjomanRegular"
+  >
+    <div class="min-h-screen w-full flex relative">
       <!-- left and center -->
 
-      <div class="md:w-4/5 w-full p-6">
+      <div class="md:w-4/5 w-full p-6 text-cazyTaupe">
         <!-- logo  -->
         <div>LogoWebPage</div>
-        <div class="text-center mt-36 font-bold text-3xl tracking-wider">
-          <p>....... خوش آمدید مهندس ناظر</p>
+        <div
+          class="text-center mt-20 md:font-bold font-extrabold md:text-3xl text-lg"
+        >
+          <span
+            class="border-2 border-cazyTaupe rounded-md md:p-4 p-1 mb-20 text-right md:pr-8"
+            >🎼 خوش آمدید جناب آقای هومن خلیلی</span
+          >
         </div>
       </div>
 
@@ -29,13 +38,13 @@
       <!-- right sidebar -->
       <!-- in mobile we see sidebarand button open or close side -->
       <div
-        class="sidebar transition-all duration-300 absolute top-0 right-0 w-64 md:hidden bg-bluelg text-semiWhite h-screen rounded-l-lg text-center p-2 z-50 hiddenSidebar"
+        class="sidebar transition-all duration-300 absolute top-0 right-0 w-64 md:hidden bg-cazyTaupe text-softPeach h-full rounded-l-lg text-center p-2 z-50 hiddenSidebar"
       >
         <!-- for close button -->
         <div class="text-right p-5">
           <button class="closebarButton">
             <i
-              class="fa-regular fa-circle-xmark text-3xl hover:text-black transition-all duration-500"
+              class="fa-regular fa-circle-xmark text-3xl transition-all duration-500"
             ></i>
           </button>
         </div>
@@ -48,10 +57,12 @@
                 class="hover:text-black hover:bg-semiWhite hover:rounded-lg p-3 transition-all duration-500"
               >
                 <a
-                  class="reportsButton cursor-pointer"
+                  class="reportsButton cursor-pointer flex gap-2 justify-center items-center"
                   href="./reportsEngineerPanel.html"
-                  >پنل گزارشات</a
                 >
+                  <span>پنل گزارشات</span>
+                  <i class="fa-solid fa-table-columns"></i>
+                </a>
               </div>
             </li>
             <li class="border-b-2"></li>
@@ -61,10 +72,11 @@
                 class="hover:text-black hover:bg-semiWhite hover:rounded-lg p-3 transition-all duration-500"
               >
                 <a
-                  class="changePassBtn cursor-pointer"
+                  class="changePassBtn cursor-pointer flex gap-2 justify-center items-center"
                   href="./changePasswordPage.html"
                 >
-                  تغییر رمز عبور
+                  <span>تغییر رمز عبور</span>
+                  <i class="fa-solid fa-lock-open"></i>
                 </a>
               </div>
             </li>
@@ -80,35 +92,39 @@
         <i class="fas fa-bars text-2xl"></i>
       </button>
       <div
-        class="md:w-1/5 hidden md:inline-block text-right border border-l-2 border-dark-gray text-semiWhite bg-blue-100"
+        class="md:w-1/5 hidden md:inline-block text-right border border-l-2 border-dark-gray text-cazyTaupe bg-cazyTaupe"
       >
         <div
-          class="m-4 border border-gray-400 bg-bluelg h-[calc(100%_-_2rem)] rounded-lg text-center p-2"
+          class="m-4 border border-gray-400 bg-softPeach clipPathPolygon h-[calc(100%_-_2rem)] rounded-lg text-center p-2"
         >
-          <div class="mt-24 text-lg font-bold">
+          <div class="mt-24 text-xl font-bold">
             <!-- reports page (implement with ajax) -->
-            <ul class="space-y-8 tracking-widest">
+            <ul class="space-y-8">
               <li>
                 <div
-                  class="hover:text-black hover:bg-semiWhite hover:rounded-lg p-3 transition-all duration-500"
+                  class="hover:text-semiWhite hover:bg-cazyTaupe hover:rounded-lg p-3 transition-all duration-500"
                 >
                   <a
-                    class="reportsButton cursor-pointer"
+                    class="reportsButton cursor-pointer flex gap-2 justify-center items-center"
                     href="./reportsEngineerPanel.html"
-                    >پنل گزارشات</a
                   >
+                    <span>پنل گزارشات</span>
+                    <i class="fa-solid fa-table-columns"></i>
+                  </a>
                 </div>
               </li>
               <li>
                 <!-- changes password page (implement with ajax) -->
                 <div
-                  class="hover:text-black hover:bg-semiWhite hover:rounded-lg p-3 transition-all duration-500"
+                  class="hover:text-semiWhite hover:bg-cazyTaupe hover:rounded-lg p-3 transition-all duration-500"
                 >
                   <a
-                    class="changePassBtn cursor-pointer"
+                    class="changePassBtn cursor-pointer flex gap-2 justify-center items-center"
                     href="./changePasswordPage.html"
-                    >تغییر رمز عبور</a
                   >
+                    <span>تغییر رمز عبور</span>
+                    <i class="fa-solid fa-lock-open"></i>
+                  </a>
                 </div>
               </li>
             </ul>
